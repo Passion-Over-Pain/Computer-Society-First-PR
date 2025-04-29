@@ -55,6 +55,11 @@ header {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#toggleMode:hover {
+  background-color: var(--primary);
+  color: #000;
 }
 
 main {
@@ -96,7 +101,7 @@ footer {
   top: 100%;
   text-align: center;
   padding: 1rem;
-  background-color: var(--accent);
+  background-color: #000;
   color: var(--primary);
   margin-top: auto;
 }
