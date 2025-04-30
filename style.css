@@ -71,28 +71,41 @@ main {
 }
 
 .card {
-  background-color: #fff;
-  border: 2px solid var(--accent);
-  border-radius: 10px;
-  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.card a {
-  color: var(--accent);
-  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  cursor: help;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+  color: var(--accent); /* Navy Blue */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
 }
 
 body.dark-mode .card {
   background-color: #1c1c1c;
   color: var(--text-dark);
-  border-color: var(--primary);
+  border-color: #333;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .card a {
+  color: var(--primary); /* Yellow */
 }
 
 /* Footer styling */
